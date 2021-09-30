@@ -4,6 +4,9 @@ import random
 
 import array 
 
+# author
+__author__ = "Munseer"
+
 # maximum length of password
 max_len = 30
 
@@ -49,13 +52,16 @@ rand_digit = random.choice(digits)
 # randomising upper case characters
 rand_upper = random.choice(upcase_characters) 
 
+# randomising lower case characters
 rand_lower = random.choice(locase_characters) 
 
+# randomising symbols
 rand_symbol = random.choice(symbols) 
 
   
-
+# creating temporary password
 temp_pass = rand_digit + rand_upper + rand_lower + rand_symbol 
+
 
 for x in range(max_len - 4): 
 
@@ -69,8 +75,9 @@ password = ""
 
 for x in temp_pass_list: 
 
+# printing password
         password = password + x 
-
+# printing name of author
 print("""  __  __
  |  \/  |_   _ _ __  ___  ___  ___ _ __
  | |\/| | | | | '_ \/ __|/ _ \/ _ \ '__|
@@ -79,4 +86,5 @@ print("""  __  __
 
 print("\n THIS SCRIPT IS CREATED BY MUNSEER")
 
+# printing password
 print("\n you password is ready:",password)

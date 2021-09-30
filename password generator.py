@@ -47,7 +47,7 @@ rand_upper = random.choice(upcase_characters)
 
 rand_lower = random.choice(locase_characters) 
 
-rand_symbol = random.choice(sysmbols) 
+rand_symbol = random.choice(symbols) 
 
   
 

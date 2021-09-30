@@ -36,7 +36,7 @@ symbols = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>',
   
 
 
-COMBINED_LIST = digits + upcase_characters + locase_characters + symbols 
+combined_list = digits + upcase_characters + locase_characters + symbols 
 
   
 
@@ -55,7 +55,7 @@ temp_pass = rand_digit + rand_upper + rand_lower + rand_symbol
 
 for x in range(max_len - 4): 
 
-    temp_pass = temp_pass + random.choice(COMBINED_LIST) 
+    temp_pass = temp_pass + random.choice(combined_list) 
 
     temp_pass_list = array.array('u', temp_pass) 
 
